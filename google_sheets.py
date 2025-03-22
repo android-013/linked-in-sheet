@@ -9,7 +9,7 @@ creds = ServiceAccountCredentials.from_json_keyfile_name("your_project.json", sc
 client = gspread.authorize(creds)
 
 # Open the Google Sheet
-spreadsheet = client.open("Your Google Sheet Name")  # Change to your sheet name
+spreadsheet = client.open("nubtk lookup")  # Change to your sheet name
 sheet = spreadsheet.sheet1  # Select the first sheet
 
 # Read all values from column 1 (Names)
