@@ -12,8 +12,8 @@ client = gspread.authorize(creds)
 spreadsheet = client.open("nubtk lookup")  # Change to your sheet name
 sheet = spreadsheet.sheet1  # Select the first sheet
 
-# Read all values from column 1 (Names)
-names = sheet.col_values(1)  # Assuming names are in column A
+# Read all data from the Google Sheet
+names = sheet.col_values(2)  # names are in column B
 print("Names in Google Sheet:", names)
 
 # Write a test entry in Column B (Profiles)
